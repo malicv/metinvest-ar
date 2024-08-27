@@ -1,23 +1,24 @@
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>AR QR Code Example</title>
     <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/AR-js-org/AR.js/aframe/build/aframe-ar.js"></script>
-  </head>
-  <body>
+</head>
+<body>
     <a-scene embedded arjs>
-      <!-- AR Camera -->
-      <a-marker preset="barcode" value="your_qr_code_value_here">
-        <a-entity
-          gltf-model="url(logo.glb)"
-          scale="2 2 2"
-          position="0 0 0"
-          rotation="0 0 0">
-        </a-entity>
-      </a-marker>
-      <a-entity camera></a-entity>
+        <!-- AR Camera -->
+        <a-marker preset="barcode" value="logo_marker">
+            <a-entity
+                gltf-model="url(logo.glb)"
+                scale="2 2 2"
+                position="0 0 0"
+                rotation="0 0 0">
+            </a-entity>
+        </a-marker>
+        <a-entity camera></a-entity>
     </a-scene>
-  </body>
+</body>
 </html>
