@@ -15,9 +15,9 @@
 </head>
 <body>
     <a-scene embedded arjs>
-        <!-- AR Marker, который активируется через камеру -->
-        <a-marker preset="pattern-logo_2d.patt">
-            <!-- 3D-модель логотипа компании -->
+        <!-- AR Маркер, созданный на основе логотипа -->
+        <a-marker type="pattern" url="pattern-logo_2d.patt">
+            <!-- Логотип компании в дополненной реальности -->
             <a-entity 
                 geometry="primitive: plane; height: 1; width: 1" 
                 material="shader: flat; src: url(logo_2d.jpg);" 
